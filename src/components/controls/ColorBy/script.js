@@ -77,8 +77,9 @@ export default {
       shift: 0, // simple transfer function shift
       dataRange: [0, 0],
       interpolateScalarsBeforeMapping: true,
-      colorToSlices: false,
-      opacityToSlices: false,
+      // 改了
+      colorToSlices: true,
+      opacityToSlices: true,
       originalLUTRanges: {}, // arrayname -> dataRange
     };
   },

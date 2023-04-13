@@ -5,15 +5,15 @@ import Representation from 'paraview-glance/src/components/controls/Representati
 import Slice from 'paraview-glance/src/components/controls/SliceControl';
 
 export default [
-  {
-    component: Representation,
-    defaultExpand: true,
-    icon: 'mdi-brightness-6',
-    name: 'Representation',
-    visible: (source) =>
-      source.getDataset().isA('vtkPolyData') ||
-      source.getDataset().isA('vtkImageData'),
-  },
+  // {
+  //   component: Representation,
+  //   defaultExpand: true,
+  //   icon: 'mdi-brightness-6',
+  //   name: 'Representation',
+  //   visible: (source) =>
+  //     source.getDataset().isA('vtkPolyData') ||
+  //     source.getDataset().isA('vtkImageData'),
+  // },
   {
     component: ColorBy,
     defaultExpand: true,

@@ -33,7 +33,8 @@
             {{ getActiveArray().getRange()[1].toFixed(3) }}
           </v-flex>
         </v-layout>
-        <v-layout row align-center v-if="!!activeFieldName">
+        <!-- <v-layout row align-center v-if="!!activeFieldName"> -->
+          <v-layout row align-center v-if="false">
           <v-flex xs6 class="body-2"># of components:</v-flex>
           <v-flex xs6 class="body-2" :class="$style.canSelect">
             {{ getActiveArray().getNumberOfComponents() }}

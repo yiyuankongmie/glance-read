@@ -1,7 +1,8 @@
 <div
   v-if="domains.representation || domains.opacity || domains.sampleDistance"
+  v-show="false"
 >
-  <v-card flat :class="$style.block" v-if="domains.representation">
+  <v-card flat :class="$style.block" v-if="domains.representation" >
     <v-container fluid grid-list-xs class="pa-0">
       <v-layout row wrap align-center>
         <v-flex xs12>

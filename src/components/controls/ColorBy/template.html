@@ -28,7 +28,7 @@
           </v-flex>
         </template>
         <template v-if="colorBy !== 'solid'">
-          <v-flex xs12 class="pt-2">
+          <!-- <v-flex xs12 class="pt-2">
             <v-menu
               :close-on-content-click="false"
               offset-y
@@ -49,8 +49,8 @@
                 v-on:input="onChangePreset"
               />
             </v-menu>
-          </v-flex>
-          <v-flex xs5 class="pb-4" :class="$style.negativeTopSpacing">
+          </v-flex> -->
+          <!-- <v-flex xs5 class="pb-4" :class="$style.negativeTopSpacing">
             <v-text-field
               @change="$proxyManager.renderAllViews()"
               label="Min"
@@ -61,7 +61,7 @@
               :value="dataRange[0]"
               @input="setDataRangeIndex(0, $event)"
             />
-          </v-flex>
+          </v-flex> -->
           <v-flex
             xs2
             class="text-center pb-4"
@@ -83,8 +83,8 @@
             </v-tooltip>
             <v-spacer v-else />
           </v-flex>
-          <v-flex xs5 class="pb-4" :class="$style.negativeTopSpacing">
-            <v-text-field
+          <!-- <v-flex xs5 class="pb-4" :class="$style.negativeTopSpacing">
+            <v-text-field 
               @change="$proxyManager.renderAllViews()"
               label="Max"
               step="any"
@@ -95,10 +95,10 @@
               :value="dataRange[1]"
               @input="setDataRangeIndex(1, $event)"
             />
-          </v-flex>
+          </v-flex> -->
         </template>
         <template v-if="available === 'volume'">
-          <v-flex
+          <!-- <v-flex
             xs12
             v-if="piecewiseFunction && !hasPresetOpacity"
             v-on:touchstart.stop
@@ -108,13 +108,13 @@
               :source="source"
               :proxyManager="$proxyManager"
             />
-          </v-flex>
+          </v-flex> -->
           <v-flex xs12 v-if="hasPresetOpacity">
             <v-layout row align-center>
               <v-flex xs3>
                 <span :class="$style.smallLabel">Shift</span>
               </v-flex>
-              <v-flex xs6>
+              <!-- <v-flex xs6>
                 <v-slider
                   v-model="shift"
                   :min="shiftRange[0]"
@@ -134,7 +134,7 @@
                   hide-details
                   :class="$style.slimInput"
                 />
-              </v-flex>
+              </v-flex> -->
             </v-layout>
           </v-flex>
           <v-flex xs12>
